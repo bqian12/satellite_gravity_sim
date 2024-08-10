@@ -1,0 +1,9 @@
+[package]
+name = "gravity_sim"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ndarray = "0.15"
+ndarray-linalg = "0.16"
+norman = "0.0.4"
