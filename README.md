@@ -2,12 +2,12 @@
 
 ## Overview
 
-This project simulates the orbit of a satellite using the Earth Gravitational Model 2008 (EGM2008) and performs numerical integration using the 4th order Runge-Kutta method. The simulation reads input from a configuration file, which specifies mass, initial conditions, time parameters, and the path to the EGM2008 coefficients file. The EGM2008 gravitational potential model coefficients were obtained from ICGEM.
+This project simulates the orbit of a satellite and performs numerical integration using the 4th order Runge-Kutta method. The simulation reads input from a configuration file, which specifies satellite mass, initial conditions, time parameters, and earth parameters. Previously, the EGM2008 model was used but issues were encountered uploading the coefficients to Github.
 
 ## Environment
 
-This simulation requires Rust to be installed on the system, along with the `ndarray` crate.
+This simulation requires Rust to be installed on the system.
 
 ## Running the Simulation
 
-To run the simulation, simply `cargo build` and `cargo run`. An example input file is included called `input.txt`. Note that the simulation is currently slow due to the amount of computation. Improvements should be made in the future to performance.
+To run the simulation, simply `cargo build` and `cargo run` from the top level `satellite_gravity_sim` directory. An example input file is included called `input.txt`. The user will be prompted for an input file, but the simulation will also by default use the provided `input.txt` file.
